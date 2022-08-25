@@ -4,16 +4,16 @@
     left: 50%;
     top: 50%;
     /* background-color: #080D51; */
-    background: url('../assets/form_shadow.svg');
+    background: url('../assets/inverted_form_shadow.svg');
     background-repeat: no-repeat;
     background-size:cover;
     border: none;
     border-radius: 30px;
-    width:23rem;
+    width:24rem;
     /* padding: 0.7rem; */
     display: flex;
     flex-direction: column;
-    height:40rem;
+    height:50rem;
 
     transform : translate(-50%, -50%);
 
@@ -22,44 +22,29 @@
     
 }
 
-.wobb-logo{
-    position: relative;
-    top:15vh;
-    left: 35%;
-    transform : translate(-55%, -50%);
-    align-self: flex-end;
 
-    background-color: #080D51;
-
-    width: fit-content;
-    padding: 1.1rem;
-    border-radius: 20rem;
-    color: aliceblue;
-    box-shadow: -0.4rem 0.1rem 2px rgba(0, 0, 0, 0.2);
-
-}
 
 .form-heading{
     font-size: 2.5rem;
     position: relative;
     color: #CECBE6;
-    align-self: flex-end;
+    align-self:center;
     /* margin-top: 1rem; */
     font-weight: 700;
-    top: -5rem;
+    top: -2rem;
 
 }
 
 
-.srg-form{
+.srg-form-inverted{
     position: relative;
     display: flex;
     flex-direction: column;
     margin: 0 1.5rem;
-    top: 8rem;
+    top: 1rem;
 }
 
-.srg-form input{
+.srg-form-inverted input{
     /* margin: 1rem 0; */
     /* margin-left: 1rem; */
     /* padding: .3rem; */
@@ -76,7 +61,7 @@
 
 }
 
-.srg-form .input-container{
+.srg-form-inverted .input-container{
     margin: 1rem 0;
     margin-left: 1rem;
     padding: .3rem;
@@ -85,14 +70,14 @@
 
 }
 
-.srg-form label{
+.srg-form-inverted label{
     position: relative;
     color: #A4AADC;
     
 }
 
 
-.srg-form input::placeholder{
+.srg-form-inverted input::placeholder{
     font-size: 1rem;
     font-weight: 400;
     opacity: 100;
@@ -100,7 +85,7 @@
 
 }
 
-.srg-form input:focus-within{
+.srg-form-inverted input:focus-within{
     /* font-size: 1.2rem; */
     font-weight: 400;
     border-style: hidden!important;
@@ -109,7 +94,7 @@
 }
 
 
-.srg-form button{
+.srg-form-inverted button{
     background-color: #D5D6D4;
     border: none;
     border-radius: 14px;
@@ -118,10 +103,24 @@
     font-size: 1.2rem;
     padding: 0rem 1.35rem;
     width: fit-content;
-    align-self: flex-end;
-    margin-top: 1rem;
+    align-self: flex-start;
+    margin: 2rem 1rem;
+
 }
 
+.srg-form-inverted .remove{
+    margin-bottom: 0.3rem!important;
+    margin-top: 0.01rem!important;
+    background-color: #6066ac;
+    color: white;
+}
+
+.srg-form-inverted .add{
+    margin-bottom: 0.3rem!important;
+    margin-top: 1rem!important;
+    align-self: center;
+    background-color: #575D99;
+}
 
 .socials{
     display: flex;
