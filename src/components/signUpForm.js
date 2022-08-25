@@ -29,6 +29,7 @@ const SignUpForm = () => {
     let handleSubmit = (event) => {
         event.preventDefault();
         alert(JSON.stringify(formValues));
+        
     }
     return (
         <div className='signup-container'>
