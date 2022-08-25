@@ -53,7 +53,7 @@ const DesignForm = () => {
 
                     <div class='sign-up-container'>
                         <div class='sign-up'>
-                        <a href='#'><h5>New to Wobb? Sign Up</h5></a>
+                        <a href='/signup'><h5>New to Wobb? Sign Up</h5></a>
                         </div>
                         <div class='copyright-text'>
                             <h6>©Copyrights 2022 reserved</h6>

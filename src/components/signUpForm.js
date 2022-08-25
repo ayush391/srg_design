@@ -3,13 +3,9 @@ import { useState } from 'react'
 
 import './signUpForm.css'
 
-import fb_logo from '../assets/srg/fb.png'
-import google_logo from '../assets/srg/google.png'
-import twitter_logo from '../assets/srg/twitter.png'
-import apple_logo from '../assets/srg/apple3.png'
-
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faEnvelope, faKey, faAdd } from '@fortawesome/free-solid-svg-icons'
+import { faEnvelope, faKey, faAdd, faCircleArrowLeft } from '@fortawesome/free-solid-svg-icons'
+import go_back_bg from '../assets/go-back-bg.svg'
 
 const SignUpForm = () => {
     const [formValues, setFormValues] = useState([{ field: "" }])
@@ -35,10 +31,10 @@ const SignUpForm = () => {
         alert(JSON.stringify(formValues));
     }
     return (
-        <div className='container'>
-            <div class='form-background'>
+        <div className='signup-container'>
+            <div class='signup-form-background'>
                 <form class='srg-form-inverted' onSubmit={handleSubmit}>
-                    <h1 class='form-heading'>Sign Up</h1>
+                    <h1 class='signup-form-heading'>Sign Up</h1>
                     {/* <label for='email'>email</label> */}
                     {formValues.map((element, index) => (
 
@@ -56,21 +52,27 @@ const SignUpForm = () => {
 
                         </div>
                     ))}
-                    <button className="button add" type="button" onClick={() => 
-                        (formValues.length <= 4)?
-                        addFormFields()
-                        :null
+                    <button className="button add" type="button" onClick={() =>
+                        (formValues.length <= 4) ?
+                            addFormFields()
+                            : null
                     }>
                         <FontAwesomeIcon icon={faAdd} color='white' size={'lg'} />
                     </button>
                     <button type='submit'>NEXT</button>
-
-
                 </form>
 
 
             </div>
-        </div>
+            <div class='go-back'>
+                <img src={go_back_bg} />
+                <div className='go-back-icon'>
+                    <a href='/'>
+                        <FontAwesomeIcon icon={faCircleArrowLeft} color='#CECBE6'></FontAwesomeIcon>
+                    </a>
+                </div>
+            </div>
+        </div >
     )
 }
 
