@@ -12,7 +12,7 @@ const SignUpForm = () => {
 
     let handleChange = (i, e) => {
         let newFormValues = [...formValues];
-        newFormValues[i][e.target.field] = e.target.value;
+        newFormValues[i][e.target.name] = e.target.value;
         setFormValues(newFormValues);
     }
 
